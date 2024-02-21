@@ -1,0 +1,719 @@
+{
+    "intents": [
+      {
+        "tag": "greeting",
+        "patterns": [
+          "Hi",
+          "Hey",
+          "How's it going",
+          "Is someone there?",
+          "Hello",
+          "Good day",
+          "Good morning",
+          "Good evening"
+        ],
+        "responses": [
+          "Hello! Welcome to our restaurant. How can I assist you today?",
+          "Good day! How may I help you with your reservation or query?",
+          "Hi there! Looking to book a table or need information?"
+        ]
+      },
+      {
+        "tag": "goodbye",
+        "patterns": [
+          "Bye",
+          "See you later",
+          "Goodbye",
+          "Catch you later",
+          "I'm done, thanks"
+        ],
+        "responses": [
+          "Thank you for contacting us. Have a great day!",
+          "Bye! We look forward to serving you.",
+          "Goodbye! Feel free to return anytime."
+        ]
+      },
+      {
+        "tag": "thanks",
+        "patterns": [
+          "Thanks",
+          "Thank you",
+          "Appreciate it",
+          "Thanks a lot",
+          "Thanks for your help"
+        ],
+        "responses": [
+          "You're welcome! Glad we could assist.",
+          "Anytime! Let us know if there's anything else.",
+          "Our pleasure! Hope to see you soon."
+        ]
+      },
+      {
+        "tag": "reservation",
+        "patterns": [
+          "I want to make a reservation",
+          "Book a table",
+          "Reserve a table for two",
+          "Can I book a table for tonight?",
+          "I need to cancel my reservation",
+          "Change my reservation",
+          "Are there any tables available?"
+        ],
+        "responses": [
+          "Sure! For when would you like to make the reservation?",
+          "I can help with that. How many people and what date?",
+          "To assist you better, please provide the date, time, and number of guests."
+        ]
+      },
+      {
+        "tag": "menu",
+        "patterns": [
+          "What's on the menu?",
+          "Do you have a vegan option?",
+          "Can I see your wine list?",
+          "What are today's specials?",
+          "Do you have gluten-free options?"
+        ],
+        "responses": [
+          "Our menu features a variety of dishes , cuisines , including vegan and gluten-free options. Would you like to know more about any specific category?",
+          "You can view our full menu on our website. We have a range of options catering to different dietary needs."
+        ]
+      },
+      {
+        "tag": "hours",
+        "patterns": [
+          "What are your opening hours?",
+          "When do you close?",
+          "Are you open on Sundays?",
+          "What time does the kitchen close?"
+        ],
+        "responses": [
+          "We're open from 10 AM to 11 PM, Monday to Saturday. Sundays we're open from 11 AM to 10 PM.",
+          "Our kitchen closes one hour before the restaurant. Please let us know if you plan to arrive late."
+        ]
+      },
+      {
+        "tag": "location",
+        "patterns": [
+          "Where are you located?",
+          "How do I get to the restaurant?",
+          "Do you have parking?",
+          "Is there public transport nearby?"
+        ],
+        "responses": [
+          "We're located at 123 Main St, right in the heart of downtown. Parking is available in the structure next door.",
+          "Our restaurant is easily accessible by public transportation, with several bus stops close by."
+        ]
+      },
+      {
+        "tag": "payments",
+        "patterns": [
+          "Do you accept credit cards?",
+          "Can I pay with Apple Pay?",
+          "Do you take cash?",
+          "Are you cash only?"
+        ],
+        "responses": [
+          "We accept all major credit cards, Apple Pay, and cash.",
+          "Yes, we accept both card and cash payments. Let us know if you have any specific payment method in mind."
+        ]
+      },
+      {
+        "tag": "dietary",
+        "patterns": [
+          "Do you have any dairy-free options?",
+          "Are your dishes , cuisines , cuisines suitable for people with nut allergies?",
+          "Can I get something egg-free?",
+          "Do you offer halal options?"
+        ],
+        "responses": [
+          "We cater to various dietary needs, including dairy-free, nut-free, egg-free, and halal. Please inform us of any allergies or dietary restrictions.",
+          "Yes, we have a selection of dishes , cuisines  for different dietary requirements. Our staff can help you choose a suitable dish."
+        ]
+      },
+      {
+        "tag": "feedback",
+        "patterns": [
+          "I'd like to give feedback",
+          "How can I leave a review?",
+          "I had a problem with my last visit"
+        ],
+        "responses": [
+          "We appreciate your feedback and would love to hear about your experience. You can leave us a review on our website or contact us directly.",
+          "I'm sorry to hear about your experience. Could you provide more details so we can address the issue?"
+        ]
+      },
+      {
+        "tag": "covid",
+        "patterns": [
+          "What are your COVID safety measures?",
+          "Do I need to wear a mask?",
+          "Is outdoor seating available?",
+          "Do you require vaccination proof?"
+        ],
+        "responses": [
+          "Your safety is our priority. We follow all local health guidelines, including mask mandates and social distancing. Outdoor seating is available.",
+          "We adhere to the latest health and safety regulations. Please check our website for the current measures and requirements."
+        ]
+      },
+      {
+        "tag": "special_occasions",
+        "patterns": [
+          "Can I book a table for a birthday party?",
+          "Do you do anything special for anniversaries?",
+          "We're celebrating a special occasion, can you accommodate us?"
+        ],
+        "responses": [
+          "Absolutely! We love celebrating special occasions. We can arrange a special dessert and decorations for birthdays and anniversaries. Let us know the details.",
+          "Of course! Please provide us with the occasion and any specific requests you have, and we'll make sure it's memorable."
+        ]
+      },
+      {
+        "tag": "private_events",
+        "patterns": [
+          "Is it possible to book your restaurant for a private event?",
+          "What are the options for hosting a corporate dinner?",
+          "Can I reserve the entire restaurant for a wedding reception?"
+        ],
+        "responses": [
+          "Yes, we host private events and offer various packages for corporate dinners, weddings, and more. Would you like more information on capacity and menu options?",
+          "Certainly! We can accommodate private events, including full restaurant bookings. Let's discuss your event's requirements."
+        ]
+      },
+      {
+        "tag": "special_requests",
+        "patterns": [
+          "Can we request a table by the window?",
+          "I need a high chair for a child, can that be arranged?",
+          "Is it possible to have a quieter table away from the main dining area?"
+        ],
+        "responses": [
+          "We'll do our best to accommodate your table request. Please mention it when making your reservation.",
+          "Yes, we can provide a high chair. Just let us know when you book your table.",
+          "We understand the need for a quieter dining experience. Please mention your preference when booking, and we'll arrange a suitable table."
+        ]
+      },
+      {
+        "tag": "menu_customization",
+        "patterns": [
+          "Can dishes , cuisines be customized for dietary restrictions?",
+          "I have a food allergy, can the kitchen accommodate that?",
+          "Are there options for low-sodium diets?"
+        ],
+        "responses": [
+          "Our kitchen is happy to accommodate dietary restrictions and allergies. Please inform us when making your reservation.",
+          "Absolutely! We take food allergies very seriously. Let us know your restrictions, and we'll communicate them to our chef.",
+          "Yes, we offer customization for various dietary needs, including low-sodium options. Please discuss your requirements with our staff."
+        ]
+      },
+      {
+        "tag": "loyalty_program",
+        "patterns": [
+          "Do you have a loyalty program?",
+          "How can I join the loyalty program?",
+          "What are the benefits of the loyalty program?"
+        ],
+        "responses": [
+          "Yes, we offer a loyalty program for our regular customers. You can sign up on our website or ask our staff during your visit.",
+          "Our loyalty program includes benefits like discounts, priority reservations, and exclusive invitations. Join through our website or inquire in-restaurant for more details."
+        ]
+      },
+      {
+        "tag": "parking_info",
+        "patterns": [
+          "Is parking available on site?",
+          "Do you offer valet parking?",
+          "What's the best place to park nearby?"
+        ],
+        "responses": [
+          "We have on-site parking available for guests. Additionally, valet parking is available during dinner hours.",
+          "There's a parking lot directly behind the restaurant, as well as street parking. Valet service is also an option for your convenience."
+        ]
+      },
+      {
+        "tag": "wait_time",
+        "patterns": [
+          "Is there a wait time for walk-ins?",
+          "How long is the wait for a table tonight?",
+          "Can I add my name to the waitlist over the phone?"
+        ],
+        "responses": [
+          "Wait times vary, but we recommend calling ahead to add your name to the waitlist. We'll do our best to accommodate you as quickly as possible.",
+          "For tonight, the current wait time is approximately 30 minutes. Adding your name to the waitlist by phone can reduce your wait time."
+        ]
+      },
+      {
+        "tag": "technology_support",
+        "patterns": [
+          "Do you have WiFi?",
+          "Is there a way to charge my phone at the table?",
+          "Can I scan a QR code for the menu?"
+        ],
+        "responses": [
+          "Yes, free WiFi is available for our guests. Ask our staff for the password.",
+          "Certainly, we have charging stations at some tables. Let us know if you need one when you make your reservation.",
+          "Absolutely, you can scan a QR code at your table to access our digital menu. Paper menus are also available upon request."
+        ]
+      },
+      {
+        "tag": "health_safety",
+        "patterns": [
+          "What are your cleanliness and hygiene measures?",
+          "Do you follow any health safety guidelines in the kitchen?",
+          "How often is the dining area sanitized?"
+        ],
+        "responses": [
+          "We adhere to strict cleanliness and hygiene protocols, following all health safety guidelines to ensure our kitchen and dining area are impeccably maintained.",
+          "Our dining area is sanitized regularly throughout the day, and we follow comprehensive health and safety guidelines to ensure the wellbeing of our guests and staff."
+        ]
+      },
+      {
+        "tag": "outdoor_seating",
+        "patterns": [
+          "Do you have outdoor seating?",
+          "Can I reserve a table outside?",
+          "Is the patio open for dining?"
+        ],
+        "responses": [
+          "Yes, we have a beautiful outdoor seating area. You can specify your preference for outdoor dining when making a reservation.",
+          "Our patio is open for dining, weather permitting. We recommend booking in advance to secure an outdoor table."
+        ]
+      },
+      {
+        "tag": "pet_friendly",
+        "patterns": [
+          "Is your restaurant pet-friendly?",
+          "Can I bring my dog if we dine outside?",
+          "Are pets allowed in the outdoor area?"
+        ],
+        "responses": [
+          "Pets are welcome in our outdoor dining area. Please let us know when you book if you'll be bringing your furry friend.",
+          "We're a pet-friendly establishment in our outdoor seating area. We even offer water bowls for your pets."
+        ]
+      },
+      {
+        "tag": "accommodate_large_groups",
+        "patterns": [
+          "Can you accommodate large groups?",
+          "I’m planning a party for 20 people, can you host us?",
+          "What’s the maximum number of guests you can seat together?"
+        ],
+        "responses": [
+          "We love hosting large groups! For parties of 20 or more, please contact us directly to discuss arrangements and menu options.",
+          "Our restaurant can accommodate groups up to 30 guests. For large party reservations, please give us a call to ensure the best experience."
+        ]
+      },
+      {
+        "tag": "gift_cards",
+        "patterns": [
+          "Do you offer gift cards?",
+          "How can I purchase a gift card?",
+          "Can gift cards be used for online orders?"
+        ],
+        "responses": [
+          "Yes, we offer gift cards in various denominations. You can purchase them directly from our website or in the restaurant.",
+          "Our gift cards are a fantastic way to share the joy of dining with friends and family. They can be used for both dine-in and online orders."
+        ]
+      },
+      {
+        "tag": "online_ordering",
+        "patterns": [
+          "Can I order food online?",
+          "Do you have a delivery service?",
+          "How does online ordering work?"
+        ],
+        "responses": [
+          "You can order food online through our website or via popular food delivery apps. Check out our menu and order your favorites!",
+          "We’ve partnered with several delivery services to bring our delicious meals right to your doorstep. Visit our website for more details."
+        ]
+      },
+      {
+        "tag": "cancellation_policy",
+        "patterns": [
+          "What’s your cancellation policy for reservations?",
+          "How late can I cancel my booking?",
+          "Do you charge for late cancellations?"
+        ],
+        "responses": [
+          "Cancellations are free up to 24 hours before your reservation. Late cancellations may incur a fee to cover preparation costs.",
+          "Please inform us as soon as possible if you need to cancel or modify your reservation. We understand plans change and are here to assist."
+        ]
+      },
+      {
+        "tag": "sustainability_practices",
+        "patterns": [
+          "What sustainability practices does your restaurant follow?",
+          "Do you use locally sourced ingredients?",
+          "Are your seafood dishes , cuisines sustainably sourced?"
+        ],
+        "responses": [
+          "We’re committed to sustainability, using locally sourced ingredients whenever possible and ensuring our seafood is sustainably sourced.",
+          "Our restaurant takes pride in our sustainability practices, including waste reduction and supporting local farmers."
+        ]
+      },
+      {
+        "tag": "chef_specials",
+        "patterns": [
+          "What are the chef’s specials today?",
+          "Can the chef recommend a dish?",
+          "What’s unique on the menu right now?"
+        ],
+        "responses": [
+          "Our chef’s specials are updated daily, featuring seasonal ingredients and innovative creations. Let us surprise you with something unique!",
+          "Today’s specials include a selection of dishes , cuisines crafted by our chef. For recommendations, please don’t hesitate to ask."
+        ]
+      },
+      {
+        "tag": "dress_code",
+        "patterns": [
+          "Is there a dress code?",
+          "What should I wear?",
+          "Do you require formal attire?"
+        ],
+        "responses": [
+          "Our restaurant has a smart casual dress code. We believe dining out is a special occasion and suggest dressing accordingly.",
+          "While we don’t require formal attire, we recommend smart casual as the ideal choice for dining with us."
+        ]
+      },
+      {
+        "tag": "music_and_entertainment",
+        "patterns": [
+          "Do you have live music?",
+          "What kind of entertainment do you offer?",
+          "Is there a performance tonight?"
+        ],
+        "responses": [
+          "We feature live music on select evenings. Please check our events calendar on our website or call us for tonight’s lineup.",
+          "Our restaurant occasionally hosts performances and live music nights. For the latest schedule, please visit our website or contact us directly."
+        ]
+      },
+      {
+        "tag": "noise_level",
+        "patterns": [
+          "Is the restaurant noisy?",
+          "I’d prefer a quiet dining spot, is that possible?",
+          "How loud is the dining area?"
+        ],
+        "responses": [
+          "Our dining room is designed to balance ambiance and conversation. If you prefer a quieter spot, please mention it when making your reservation.",
+          "We understand the importance of atmosphere. While our restaurant is lively, we can recommend quieter dining times or areas."
+        ]
+      },
+      {
+        "tag": "accessibility",
+        "patterns": [
+          "Is your restaurant wheelchair accessible?",
+          "Do you have any facilities for guests with disabilities?",
+          "Can I bring my service animal?"
+        ],
+        "responses": [
+          "Our restaurant is fully wheelchair accessible, with facilities designed to ensure a comfortable dining experience for guests with disabilities. Service animals are always welcome.",
+          "We strive to accommodate all our guests' needs. Our venue is accessible, and we welcome service animals. Please let us know if you have any specific requirements."
+        ]
+      },
+      {
+        "tag": "seasonal_menus",
+        "patterns": [
+          "Do you offer seasonal menus?",
+          "What’s new on the menu this season?",
+          "Can I see your winter/summer menu?"
+        ],
+        "responses": [
+          "Yes, we pride ourselves on offering seasonal menus that highlight the best of what's available. Our current seasonal menu can be found on our website.",
+          "Our menu changes with the seasons to ensure we're using the freshest ingredients. Please check our website for the latest offerings or ask our staff for recommendations."
+        ]
+      },
+      {
+        "tag": "table_preferences",
+        "patterns": [
+          "I prefer a table away from the kitchen.",
+          "Can we get a booth?",
+          "Is it possible to reserve a table near the window?"
+        ],
+        "responses": [
+          "Certainly! We'll note your table preference and do our best to accommodate your request based on availability.",
+          "Your comfort is our priority. Please mention your preference when making the reservation, and we’ll reserve the perfect spot for you."
+        ]
+      },
+      {
+        "tag": "technology_in_service",
+        "patterns": [
+          "Do you offer contactless payment options?",
+          "Can I view the menu on my phone?",
+          "Is there an app for the restaurant?"
+        ],
+        "responses": [
+          "Yes, we offer contactless payment for a safer and more convenient dining experience. Our menu can also be accessed via QR code on your phone.",
+          "We embrace technology to enhance our service. You can download our restaurant's app for menu viewing, reservations, and more."
+        ]
+      },
+      {
+        "tag": "health_and_safety_concerns",
+        "patterns": [
+          "What precautions are you taking regarding COVID-19?",
+          "Is your staff fully vaccinated?",
+          "How are you ensuring the safety of your customers?"
+        ],
+        "responses": [
+          "We take health and safety seriously, with measures including staff vaccinations, regular sanitization, and adherence to all current health guidelines. Your safety is our top priority.",
+          "Our commitment to safety includes enhanced cleaning protocols, health checks for our staff, and compliance with all public health guidelines to ensure a safe dining environment."
+        ]
+      },
+      {
+        "tag": "beverage_selection",
+        "patterns": [
+          "What wine pairings do you recommend?",
+          "Can you accommodate craft beer requests?",
+          "Do you have a sommelier?"
+        ],
+        "responses": [
+          "Our sommelier is happy to recommend wine pairings to complement your meal perfectly. We also offer a selection of craft beers to suit your taste.",
+          "We pride ourselves on our extensive wine and craft beer selection. Our sommelier can guide you through our offerings for the perfect pairing."
+        ]
+      },
+      {
+        "tag": "customer_service_policies",
+        "patterns": [
+          "Who can I talk to if I have a complaint?",
+          "What’s your policy on customer feedback?",
+          "How do you handle service issues?"
+        ],
+        "responses": [
+          "We value your feedback and are here to listen. Please ask for the manager on duty to discuss any complaints or service issues you may have.",
+          "Your satisfaction is important to us. We encourage you to share your feedback, and we are committed to addressing any concerns promptly."
+        ]
+      },
+      {
+        "tag": "special_diet_menus",
+        "patterns": [
+          "Do you have a menu for kids?",
+          "Are there any options for keto diets?",
+          "What vegan desserts do you offer?"
+        ],
+        "responses": [
+          "Yes, we offer a kid-friendly menu with plenty of tasty options. For specific dietary needs like keto or vegan, we have dishes , cuisines  that cater to those preferences, including desserts.",
+          "Our menu includes selections for various dietary preferences, including vegan, keto, and gluten-free options. Just let us know what you need!"
+        ]
+      },
+      {
+        "tag": "loyalty_rewards",
+        "patterns": [
+          "How can I earn loyalty points?",
+          "What rewards do I get with your loyalty program?",
+          "Can I redeem points for a free meal?"
+        ],
+        "responses": [
+          "Join our loyalty program to earn points with every purchase, redeemable for discounts, free meals, and exclusive offers. Sign up on our website or through our app.",
+          "Our loyalty rewards include a range of benefits from discounts to complimentary dishes , cuisines . Points can indeed be redeemed for free meals among other rewards."
+        ]
+      },
+      {
+        "tag": "restaurant_atmosphere",
+        "patterns": [
+          "What’s the ambiance like?",
+          "Is it suitable for a romantic dinner?",
+          "Can you accommodate a quiet business meeting?"
+        ],
+        "responses": [
+          "Our restaurant offers a cozy and inviting atmosphere, perfect for both romantic dinners and quiet business meetings. Let us know your occasion, and we'll find the perfect spot for you.",
+          "We've designed our space to cater to various dining experiences, from intimate to professional. Please share your preferences, and we’ll ensure your experience is tailored to your needs."
+        ]
+      },
+      {
+        "tag": "reservation_details",
+        "patterns": [
+          "Next Saturday night for four people",
+          "Tomorrow at 7 PM for 2",
+          "I'd like to book for my anniversary next Friday"
+        ],
+        "responses": [
+          "Got it, a table for four next Saturday night. Can I have your name and contact number for the reservation?",
+          "Your reservation for two tomorrow at 7 PM is noted. May I have your name and a contact number?",
+          "An anniversary dinner next Friday, how romantic! How many people should I reserve for, and may I have your contact details?"
+        ]
+      },
+      {
+        "tag": "menu_inquiry_followup",
+        "patterns": [
+          "Tell me more about the vegan options",
+          "I'm interested in the gluten-free dishes , cuisines ",
+          "What kind of vegan desserts do you have?"
+        ],
+        "responses": [
+          "Our vegan options include a variety of salads, a quinoa veggie burger, and a delicious vegan pasta. Would you like to add any to your order?",
+          "For gluten-free dishes , cuisines , we offer a selection of salads, grilled fish, and a special gluten-free pizza. Any of these catch your eye?",
+          "Our vegan desserts include a rich chocolate avocado mousse and a seasonal fruit tart. Would you like to try one?"
+        ]
+      },
+      {
+        "tag": "payment_method_inquiry",
+        "patterns": [
+          "Can I pay with Apple Pay?",
+          "Do you accept cryptocurrency?",
+          "Is it possible to split the bill?"
+        ],
+        "responses": [
+          "Yes, we accept Apple Pay. It's a convenient option for many of our customers.",
+          "I'm sorry, but we do not accept cryptocurrency as a payment method at this time.",
+          "Certainly, we can split the bill. Just let our staff know how you'd like it divided when you request your check."
+        ]
+      },
+      {
+        "tag": "dietary_restriction_details",
+        "patterns": [
+          "I have a nut allergy, what can I eat?",
+          "Are your dairy-free options also vegan?",
+          "I'm on a keto diet, do you have suitable meals?"
+        ],
+        "responses": [
+          "For a nut allergy, we recommend our nut-free salad, grilled chicken, or fish dishes , cuisines . Our staff is trained to handle allergies, so please inform your server.",
+          "Many of our dairy-free options are vegan, but not all. Our menu clearly marks vegan dishes , cuisines  for your convenience.",
+          "Yes, we offer keto-friendly options like our cauliflower rice bowl and zucchini noodle pasta. Would you like to try one?"
+        ]
+      },
+      {
+        "tag": "reservation_followup",
+        "patterns": [
+          "Can I change my reservation to an earlier time?",
+          "I need to cancel my reservation for tonight.",
+          "Can I add more people to my reservation?"
+        ],
+        "responses": [
+          "Certainly! What time would you like to change your reservation to?",
+          "I'm sorry to hear that. Your reservation for tonight has been cancelled. We hope to see you another time.",
+          "Of course! How many additional guests will be joining you?"
+        ]
+      },
+      {
+        "tag": "charging_station_inquiry",
+        "patterns": [
+          "Will I need my own charging cable?",
+          "How many charging stations do you have?",
+          "Is there a charging station near every table?"
+        ],
+        "responses": [
+          "We provide cables for most phone types, but you're welcome to use your own if you prefer.",
+          "We have several charging stations throughout the restaurant. Availability can vary, so it's best to request a table near one when booking.",
+          "Not every table has a nearby charging station, but we'll do our best to accommodate your request upon reservation."
+        ]
+      },
+      {
+        "tag": "pet_friendly_followup",
+        "patterns": [
+          "Do you provide water bowls for dogs?",
+          "Are there any restrictions for pets?",
+          "Can my dog sit inside if it's cold?"
+        ],
+        "responses": [
+          "Yes, we provide water bowls for our four-legged guests. Just ask your server.",
+          "Pets are welcome in our outdoor area. We ask that they remain leashed and under control for the comfort of all guests.",
+          "While pets are typically seated in our outdoor area, we can make exceptions for service animals or during inclement weather. Please call ahead to arrange."
+        ]
+      },
+      {
+        "tag": "special_diet_followup",
+        "patterns": [
+          "Do you have a separate vegan menu?",
+          "What gluten-free desserts do you offer?",
+          "Can you recommend a keto-friendly appetizer?"
+        ],
+        "responses": [
+          "Our vegan options are integrated into our main menu, clearly marked for easy identification.",
+          "For a gluten-free dessert, we offer a delicious flourless chocolate cake and a selection of sorbets.",
+          "A popular keto-friendly appetizer is our avocado and shrimp salad. It's both delicious and compliant with keto dietary restrictions."
+        ]
+      },
+      {
+        "tag": "confirm_reservation_change",
+        "patterns": [
+          "Change my reservation to 6 PM",
+          "I need to update my booking to next Friday",
+          "Add two more guests to my reservation"
+        ],
+        "responses": [
+          "Your reservation has been updated to 6 PM. We look forward to seeing you then.",
+          "We've changed your booking to next Friday. Is there anything else you need to update?",
+          "Two more guests have been added to your reservation. Can I assist you with anything else?"
+        ]
+      },
+      {
+        "tag": "confirm_dietary_restriction_accommodation",
+        "patterns": [
+          "I'm allergic to nuts, is your kitchen safe?",
+          "Do you have dairy-free desserts?",
+          "I'm on a keto diet, what can I order?"
+        ],
+        "responses": [
+          "Our kitchen takes allergies very seriously and has protocols in place to prevent cross-contamination. Please inform your server upon arrival.",
+          "Yes, we offer dairy-free desserts such as our coconut milk ice cream and fruit sorbets.",
+          "For a keto diet, we recommend our grilled salmon with a side of roasted vegetables or our keto-friendly chicken Caesar salad."
+        ]
+      },
+      {
+        "tag": "confirm_payment_method",
+        "patterns": [
+          "Can I pay using a digital wallet?",
+          "Is splitting the bill an option?",
+          "Do you accept international credit cards?"
+        ],
+        "responses": [
+          "Yes, digital wallet payments like Apple Pay and Google Wallet are accepted here.",
+          "Splitting the bill is no problem at all. Just let your server know how you'd like it divided.",
+          "We accept most international credit cards. Please let us know if you have any specific payment questions."
+        ]
+      },
+      {
+        "tag": "confirm_menu_options",
+        "patterns": [
+          "What's in the vegan burger?",
+          "Are your pizzas gluten-free?",
+          "What sides come with the steak?"
+        ],
+        "responses": [
+          "Our vegan burger is made with a quinoa and black bean patty, topped with avocado and a vegan aioli, served on a whole wheat bun.",
+          "Yes, we offer gluten-free pizza crusts upon request. You can choose any of our pizza toppings for your gluten-free pizza.",
+          "The steak comes with a choice of roasted potatoes, a side salad, or steamed vegetables. Would you like to add any special instructions for your order?"
+        ]
+      },
+      {
+        "tag": "confirm_technology_use",
+        "patterns": [
+          "How do I connect to the WiFi?",
+          "Can I charge my phone at my table?",
+          "Do you have an online reservation system?"
+        ],
+        "responses": [
+          "WiFi is available to all our guests. Simply select the 'RestaurantGuest' network and use the password 'Welcome123' to connect.",
+          "Yes, you can charge your phone at your table. We have charging stations available; just ask your server for assistance.",
+          "Our online reservation system is easy to use. Visit our website and click on 'Book a Table' to make your reservation."
+        ]
+      },
+      {
+        "tag": "confirm_pet_policy",
+        "patterns": [
+          "Can I bring my dog to the outdoor seating area?",
+          "Are water bowls provided for pets?",
+          "What are the rules for bringing pets?"
+        ],
+        "responses": [
+          "Your dog is welcome in our outdoor seating area. We just ask that pets remain on their leash.",
+          "We provide water bowls for pets. Just let us know, and we'll make sure your furry friend stays hydrated.",
+          "Pets are allowed in our outdoor area as long as they are on a leash and well-behaved to ensure a comfortable experience for all our guests."
+        ]
+      },
+      {
+        "tag": "confirm_special_diet_menu",
+        "patterns": [
+          "Is there a separate menu for children?",
+          "Can you accommodate a low FODMAP diet?",
+          "What vegan options do you have for breakfast?"
+        ],
+        "responses": [
+          "Yes, we offer a children's menu featuring smaller portions and kid-friendly favorites.",
+          "Our menu includes options that can be adapted for a low FODMAP diet. Please discuss your needs with our staff when ordering.",
+          "For a vegan breakfast, we offer oatmeal with almond milk, fruit salads, and vegan pancakes made with almond milk and flaxseed."
+        ]
+      }
+    ]
+  }
+  
